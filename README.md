@@ -13,7 +13,7 @@ Picture below shows the images obtained after some preprocessing steps. (a) is t
 ![image](https://github.com/yashika03/Lung-Nodule-Segmentation-using-Squeeze-and-Excitation-Dense-UNet/assets/76561509/6cff0d5f-ef36-4d7f-af00-2f9c549fab7e)
 
 ## Model:
-We trained our pre-processed images on a Squeeze-and-Excitation Dense-UNet (SE Dense-UNet) model in which an SE block was added in the decoder layer. Model consists of encoder and decoder layer. 
+The above preprocessed data was divided into 80% training, 10% validation and 10% testing data. We applied 2D Dense Unet Model along with Squeeze and Excitation Blocks, Adam Optimizer and Gelu activation function for training and testing. Model consisted of encoder and decoder layers where SE Block was added in decoder layer. Our model is able to achieve a DSC of 85.77%.
 ## Encoder and Decoder Block:
 Encoder layer consists of five blocks: 2D Convolutional Layer with Gelu Activation Function, Concatenation Layer, Dense Layer, Dropout Layer with 0.4 dropuout rate and 2D Max Pooling Layer.
 
